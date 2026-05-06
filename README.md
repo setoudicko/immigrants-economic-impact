@@ -2,7 +2,7 @@
 
 ## Spring 2026
 
-## By Agaichatou Dicko
+## By Agaichatou O. Dicko
 
 ## Overview
 
@@ -63,27 +63,27 @@ Participation in the survey research was voluntary. Respondents’ identities we
 
 The following srcipts helped produce 18 figures related to the survey study.
 
-1. survey_missing_data.py
+1. [Survey_missing_data.py](survey_missing_data.py)
 
 This script is the first to be run as it assesses the quality of the survey data before any analysis begins. It scans all columns of the CSV file for missing values, calculates the count and percentage of missing responses per variables, and generates a visual summary of data completeness. Running this script first ensures that the analysis is aware of any gaps in the data before proceeding with subsequent analyses.
 
-2. Survey_locations.py
+2. [Survey_locations.py](Survey_locations.py)
 
 This script generates a geographic map of Syracuse, New York showing the five locations where survey data were collected. It uses coordinate data to plot location markers on a city map, providing a visual representation of the spatial distribution of data collection sites. This figure appears in the methodology chapter to contextualize the survey sampling strategy.
 
-3. survey_analysis.py
+3. [Survey_analysis.py](survey_analysis.py)
 
 This generates eleven figures covering all major aspects of the survey findings including demographic profile, educational attainment versus English proficiency, arrival time, employment patterns, income distribution, and community volunteering. 
 
-4. survey_maps.py
+4. [Survey_maps.py](survey_maps.py)
 
 This script generates geographic visualizations of the countries of origin of survey respondents. It combines survey data with Natural Earth world shapefiles to produce a choropleth world map and a companion bar chart. The script requires the geopandas library and the Natural Earth shapefile dataset to be downloaded separately.
 
-5. survey_statistics.py
+5. [Survey_statistics.py](survey_statistics.py)
 
 This script generates the descriptive statistical summary of the six key quantitative variables analyzed in the study. It converts all ordinal text variables to numeric scales using standardized mappings, calculates mean, median, and standard deviation for each variable, and produces histogram figures with statistical overlays.
 
-6. path_analysis.py
+6. [Path_analysis.py](path_analysis.py)
 
 This script performs the advanced statistical analysis of the study by generating the correlation matrix and path diagram. It uses Pearson correlation coefficients to quantify the relationships between the four key economic variables — education, English proficiency, income, and percentage of income spent locally — and visualizes these relationships in three interconnected figures. This script requires the scipy library for statistical calculations.
 
